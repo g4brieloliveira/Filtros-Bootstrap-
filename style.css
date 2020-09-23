@@ -1,0 +1,206 @@
+:root{
+    overflow-x: hidden;
+}
+
+.profile-page .sections{
+    font-weight: 600;
+    color: black;
+}
+
+.profile-page .sections a{
+    width: 100%;
+    transition: .2s;
+}
+
+.profile-page .sections li{
+    margin-left: .5rem;
+}
+
+.profile-page .sections a:hover{
+    font-size: 1.02rem;
+    color: #111111;
+}
+
+#skills .container{
+    padding-top: 2rem;
+}
+
+.card-body{
+    padding: 3rem 1.25rem;
+}
+
+.col-md-6{
+    margin: .5rem 0;
+}
+
+.col-md-6 .progress-value,
+.col-md-6 .progress-badge{
+    font-size: 75%;
+}
+
+.col-md-6 .progress-value{
+    float: right;
+}
+
+.cntnt{
+    width: 100vw;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0 1rem;
+    padding: 0;
+    width: 90%;
+
+}
+
+#carouselExampleFade .carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+#carouselExampleFade .carousel-inner{
+    height: 80vh;
+    border-radius: .4rem;
+}
+
+#portfolio, #porque, #about, #skills{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+
+#portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#portfolio .container{
+    padding-top: 4.5rem;
+}
+
+.card-text{
+    text-align: justify;
+    font-size: 80%;
+}
+
+#portfolio .container .row .col-sm .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82%;
+    height: 25rem;
+    border-radius: .8rem;
+}
+
+#portfolio .container .row .col-sm img{
+    margin-top: 1rem;
+    width: 50%;
+    height: 50%;
+}
+
+#portfolio .container .row .col-sm span{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+#portfolio .container .row .col-sm span img{
+    margin: 0;
+    width: 1rem;
+    height: 1rem;
+}
+
+#portfolio .container .row .col-sm span p{
+    font-weight: bold;
+    margin: 0;
+    font-size: .6rem;
+}
+
+#about .contentAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .contentAbout .myPhoto img{
+    width: 13rem;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+}
+#about .contentAbout .iAm{
+    text-align: center;
+}
+
+#about .contentAbout .description{
+    padding: .2rem 4rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+footer .footerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footerContent p{
+    margin: 0;
+    margin-top: .5rem;
+    color: white;
+    font-size: .7rem;
+}
+
+footer .footerContent .contacts{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .footerContent a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: .7rem;
+    transition: .2s;
+}
+
+.instagram, .email, .whatsapp{
+    width: 100%;
+    text-align: center;
+}
+
+footer .footerContent a:hover{
+    text-decoration: underline;
+    font-size: .72rem;
+}
+
+footer .footerContent .contacts img{
+    width: .8rem;
+    margin-right: .2rem;
+}
