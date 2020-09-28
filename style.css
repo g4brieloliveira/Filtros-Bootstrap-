@@ -261,3 +261,9 @@ footer .footerContent .contacts img{
         flex-direction: column;
     }
 }
+
+@media(max-width: 400px){
+    p, h1, a{
+        font-size: 70% !important;
+    }
+}
