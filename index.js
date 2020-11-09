@@ -72,11 +72,21 @@ function kirakira() {
   precoPagina.textContent = preco
 }
 
-function deformacao() {
-  if (document.getElementById('deformacao').checked) {
-    preco += 150
+function pickerui() {
+  if (document.getElementById('pickerui').checked) {
+    preco += 60
   } else {
-    preco -= 150
+    preco -= 60
+  }
+
+  precoPagina.textContent = preco
+}
+
+function retouch() {
+  if (document.getElementById('retouch').checked) {
+    preco += 10
+  } else {
+    preco -= 10
   }
 
   precoPagina.textContent = preco

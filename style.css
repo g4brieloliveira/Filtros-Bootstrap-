@@ -34,10 +34,6 @@
     color: #111111;
 }
 
-#skills .container {
-    padding-top: 2rem;
-}
-
 .card-body {
     padding: 3rem 1.25rem;
 }
@@ -82,11 +78,9 @@
     height: 80vh;
     border-radius: .4rem;
 }
-
-#portfolio,
 #porque,
 #about,
-#skills {
+#skills{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -96,75 +90,70 @@
 }
 
 #portfolio {
+    width: 100vw;
+    height: 100%;
+    padding-top: 6rem;
+    background-color: #eeeeee;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-#portfolio .title {
-    padding-top: 5rem;
-}
-
-#portfolio .container {
-    padding-top: .6rem;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card-text {
-    text-align: justify;
-    font-size: 80%;
+#portfolio .list-group-item {
+    margin-bottom: .5rem;
 }
 
-#portfolio .container .row .col-sm {
+#portfolio .nav-item {
+    list-style: none;
+
+    padding: 0;
+}
+
+#portfolio .nav-item a {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
-#portfolio .container .row .col-sm .card {
+#portfolio .content span {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 82%;
-    height: 100%;
-    border-radius: .8rem;
 }
 
-#portfolio .container .row .col-sm img {
-    margin-top: 1rem;
-    width: 50%;
-    height: 50%;
+#portfolio .content{
+    width: 80vw;
 }
 
-#portfolio .container .row .col-sm span {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: .5rem;
-}
-
-#portfolio .container .row .col-sm span img {
+#portfolio .content span img {
     margin: 0;
     width: 1rem;
     height: 1rem;
 }
 
-#portfolio .container .row .col-sm span p {
+#portfolio .content span p {
     font-weight: bold;
     margin: 0;
     font-size: .6rem;
 }
 
+#portfolio .dropdown-menu {
+    width:80vw;
+    position: absolute;
+    transform: translate3d(0px, 2rem, 0px);
+}
+
+#portfolio .dropdown-menu #useEffect {
+    color: blue;
+    text-decoration: underline;
+}
 
 #prices {
     width: 100vw;
+    height: 100vh;
     padding: 2rem;
+    padding-top: 6rem;
 
     background-color: #eeeeee;
 }
@@ -175,6 +164,12 @@
 }
 
 #prices #content {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#prices #content .three{
     display: flex;
     flex-direction: column;
 }
@@ -290,6 +285,7 @@ fieldset {
     font-weight: 500;
     line-height: 1.2;
 }
+
 #preco h2 {
     display: flex;
     margin-bottom: 8px;
@@ -376,18 +372,6 @@ footer .footerContent .contacts img {
 }
 
 @media(max-width: 850px) {
-    #portfolio {
-        display: grid;
-    }
-
-    #portfolio .title {
-        padding-top: 6rem;
-    }
-
-    #portfolio .card {
-        height: 35rem !important;
-        margin-bottom: .5rem;
-    }
 
     #about .contentAbout .description {
         width: 100vw;
@@ -406,10 +390,28 @@ footer .footerContent .contacts img {
 }
 
 @media(max-width: 400px) {
-
     p,
     h1,
     a {
         font-size: 70%;
+    }
+}
+
+@media(min-width: 850px) {
+    #prices #content{
+       display: flex;
+       flex-direction: unset;
+       justify-content: center;
+       align-items: center;
+
+    }
+
+    #prices #content .three{
+        width: 30%;
+
+    }    
+
+    fieldset {
+        width: 100%;
     }
 }
